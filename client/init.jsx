@@ -6,14 +6,16 @@ import './main.html';
 
 $(document).ready(function() {
 
-    $('.ui.button').click(function() {
+    document.getElementById("randomQuestionCard").onclick = function(){
         render(<Question />, document.getElementById('questionModalContent'));
 
         $('.ui.modal').modal('show');
         $('.ui.embed').embed({
             autoplay: true
         });
-    });
+    };
+
+
 
 
 
