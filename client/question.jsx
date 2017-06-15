@@ -63,6 +63,9 @@ export default class Question extends Component{
                             </div>
                         </div>
                     </div>
+                    <div style={{float: 'right'}}>
+                    <button className="ui blue button" >Confirm</button>
+                    </div>
                 </div>
             </div>
         );

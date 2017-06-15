@@ -9,7 +9,7 @@ $(document).ready(function() {
     document.getElementById("randomQuestionCard").onclick = function(){
         render(<Question />, document.getElementById('questionModalContent'));
 
-        $('.ui.modal').modal('show');
+        $('#questionModalxxx').modal('show');
         $('.ui.embed').embed({
             autoplay: true
         });
