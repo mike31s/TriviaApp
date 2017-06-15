@@ -21,6 +21,5 @@ var helloMsg = (<div><h1>Hello</h1>
 
 
 Meteor.startup(() => {
-        render(<Question />, document.getElementById('myResponse'));
         render(helloMsg, document.getElementById('tomato'));
 });

@@ -31,51 +31,40 @@ export default class Question extends Component{
 
         var output = (
             <div>
-                <div className="ui card ui center aligned segment" id="randomQuestionCard">
-                    <h1 className="center"><i className="help icon center"></i></h1>
-                    <h3>Random Question</h3>
+                <div className="content">
+                    <h1>Question: {q}</h1>
+                    <h2>Category: {category}</h2>
 
-                <div className="ui button">
-                    Ask Away!</div>
-                <div className="ui modal">
-                    <div className="content">
-                        <h1>Question: {q}</h1>
-                        <h2>Category: {category}</h2>
-
-
-                        <div className="ui form">
-                            <div className="grouped fields">
-                                <div className="field">
-                                    <div className="ui radio checkbox">
-                                        <input type="radio" name="example2" id="100" />
-                                        <label htmlFor="100">{answerArray[0]}</label>
-                                    </div>
+                    <div className="ui form">
+                        <div className="grouped fields">
+                            <div className="field">
+                                <div className="ui radio checkbox">
+                                    <input type="radio" name="example2" id="100" />
+                                    <label htmlFor="100">{answerArray[0]}</label>
                                 </div>
-                                <div className="field">
-                                    <div className="ui radio checkbox">
-                                        <input type="radio" name="example2" id="101" />
-                                        <label htmlFor="101">{answerArray[1]}k</label>
-                                    </div>
+                            </div>
+                            <div className="field">
+                                <div className="ui radio checkbox">
+                                    <input type="radio" name="example2" id="101" />
+                                    <label htmlFor="101">{answerArray[1]}k</label>
                                 </div>
-                                <div className="field">
-                                    <div className="ui radio checkbox">
-                                        <input type="radio" name="example2" id="102" />
-                                        <label htmlFor="102">{answerArray[2]}</label>
-                                    </div>
+                            </div>
+                            <div className="field">
+                                <div className="ui radio checkbox">
+                                    <input type="radio" name="example2" id="102" />
+                                    <label htmlFor="102">{answerArray[2]}</label>
                                 </div>
-                                <div className="field">
-                                    <div className="ui radio checkbox">
-                                        <input type="radio" name="example2" id="103" />
-                                        <label htmlFor="103">{answerArray[3]}</label>
-                                    </div>
+                            </div>
+                            <div className="field">
+                                <div className="ui radio checkbox">
+                                    <input type="radio" name="example2" id="103" />
+                                    <label htmlFor="103">{answerArray[3]}</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
         );
 
         return output;
