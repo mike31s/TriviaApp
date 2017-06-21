@@ -91,8 +91,8 @@ export default class Question extends Component{
         var obj = JSON.parse(xhr.response);
         ////////////////////////////////
 
-        console.log(this.getCategory());
-        console.log(this.getDifficulty());
+   //     console.log(this.getCategory());
+   //     console.log(this.getDifficulty());
         //console.log($('#categoryDropdownxxx')[0].innerText);
 
         ////////////////////////////////
@@ -101,6 +101,7 @@ export default class Question extends Component{
         q= q.replace(/&quot;/g, "\"");
         q= q.replace(/&#039;/g, "\'");
         var category = obj.results[0].category;
+        var difficulty = obj.results[0].difficulty;
         var correct = obj.results[0].correct_answer;
         var incorrect = [obj.results[0].incorrect_answers[0],obj.results[0].incorrect_answers[1],obj.results[0].incorrect_answers[2]];
 
@@ -115,6 +116,7 @@ export default class Question extends Component{
                 <div className="content">
                     <h1>Question: {q}</h1>
                     <h2>Category: {category}</h2>
+                    <h2>Difficulty: {difficulty}</h2>
 
                     <div className="ui form">
                         <div className="grouped fields">
