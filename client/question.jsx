@@ -59,11 +59,33 @@ export default class Question extends Component{
         else
             return result.toLowerCase();
     }
+    buildAPIrequest(){
+        var difficulty = this.getDifficulty();
+        var cat = this.getCategory();
+        var output;
+        //both are defined
+        if ((difficulty != 'any') &&(cat!= 'any'))
+            output = 'https://opentdb.com/api.php?amount=1&category=' + cat + '&difficulty=' + difficulty+ '&type=multiple';
+        //diff is any but cat is defined
+         else if ((cat != 'any') && (difficulty === 'any'))
+            output = 'https://opentdb.com/api.php?amount=1&category=' + cat + '&type=multiple';
+        //diff is defined but cat is any
+        else if ((difficulty != 'any') &&(cat === 'any') )
+            output = 'https://opentdb.com/api.php?amount=1&difficulty=' + difficulty+ '&type=multiple';
+
+        else output = 'https://opentdb.com/api.php?amount=1&type=multiple';
+
+        console.log(output);
+        return output;
+        //https://opentdb.com/api.php?amount=10&category=10&difficulty=easy&type=multiple
+        //https://opentdb.com/api.php?amount=1&type=multiple
+        //https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple
+    }
 
     render () {
 
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://opentdb.com/api.php?amount=1&type=multiple", false);
+        xhr.open("GET", this.buildAPIrequest(), false);
         xhr.send();
 
         var obj = JSON.parse(xhr.response);
@@ -123,7 +145,7 @@ export default class Question extends Component{
                         </div>
                     </div>
                     <div style={{float: 'right'}}>
-                    <button className="ui blue button" >Confirm</button>
+                        <button className="ui blue button" >Confirm</button>
                     </div>
                 </div>
             </div>
