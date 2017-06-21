@@ -5,6 +5,53 @@ import React, { Component } from 'react';
 
 
 export default class Question extends Component{
+    getCategory(){
+        var result;
+        switch ($('#categoryDropdownxxx')[0].innerText){
+            case "Random":
+                result = "any";
+                break;
+            case "Books":
+                result = "10";
+                break;
+            case "Film":
+                result = "11";
+                break;
+            case "Music":
+                result = "12";
+                break;
+            case "Television":
+                result = "14";
+                break;
+            case "Video Games":
+                result = "15";
+                break;
+            case "Science and Computers":
+                result = "18";
+                break;
+            case "Science and Nature":
+                result = "17";
+                break;
+            case "Mythology":
+                result = "20";
+                break;
+            case "Geography":
+                result = "22";
+                break;
+            case "Politics":
+                result = "24";
+                break;
+            case "Celebrities":
+                result = "26";
+                break;
+            case "General Knowledge":
+                result = "9";
+                break;
+            default:
+                result = "9";
+        }
+        return result;
+    }
     render () {
 
         var xhr = new XMLHttpRequest();
@@ -14,8 +61,9 @@ export default class Question extends Component{
         var obj = JSON.parse(xhr.response);
         ////////////////////////////////
 
-        console.log(console.log($('#categoryDropdownxxx')[0].innerText));
-        console.log(console.log($('#difficultyDropdownxxx')[0].innerText));
+        console.log(this.getCategory());
+        console.log($('#categoryDropdownxxx')[0].innerText);
+        console.log($('#difficultyDropdownxxx')[0].innerText);
 
         ////////////////////////////////
 

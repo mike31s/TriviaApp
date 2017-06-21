@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9c439f-3787-4a33-be82-ee9349b6307d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/categoryDropdown.jsx" afterPath="$PROJECT_DIR$/client/categoryDropdown.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/difficultyDropdown.jsx" afterPath="$PROJECT_DIR$/client/difficultyDropdown.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/question.jsx" afterPath="$PROJECT_DIR$/client/question.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +42,8 @@
       <file leaf-file-name="categoryDropdown.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/categoryDropdown.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="75" />
+            <state relative-caret-position="625">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -51,25 +51,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="difficultyDropdown.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/difficultyDropdown.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="question.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/question.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+            <state relative-caret-position="350">
+              <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="difficultyDropdown.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/difficultyDropdown.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,9 +168,9 @@
         <option value="$PROJECT_DIR$/client/init.jsx" />
         <option value="$PROJECT_DIR$/client/main.jsx" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/difficultyDropdown.jsx" />
         <option value="$PROJECT_DIR$/client/categoryDropdown.jsx" />
         <option value="$PROJECT_DIR$/client/question.jsx" />
-        <option value="$PROJECT_DIR$/client/difficultyDropdown.jsx" />
       </list>
     </option>
   </component>
@@ -194,8 +194,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="541" />
-    <option name="y" value="115" />
+    <option name="x" value="92" />
+    <option name="y" value="32" />
     <option name="width" value="1298" />
     <option name="height" value="957" />
   </component>
@@ -666,10 +666,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58221000" />
+    <option name="totallyTimeSpent" value="60027000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="541" y="115" width="1298" height="957" extended-state="0" />
+    <frame x="92" y="32" width="1298" height="957" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1165,32 +1165,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/question.jsx">
+    <entry file="file://$PROJECT_DIR$/client/difficultyDropdown.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+        <state relative-caret-position="250">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/categoryDropdown.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="75" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="75" />
+        <state relative-caret-position="625">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/difficultyDropdown.jsx">
+    <entry file="file://$PROJECT_DIR$/client/question.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        <state relative-caret-position="350">
+          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
