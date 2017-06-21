@@ -23,5 +23,5 @@ class Talker extends Component{
 
 
 Meteor.startup(() => {
-    render(<Talker />, document.getElementById('talkerDiv'));
+    //render(<Talker />, document.getElementById('talkerDiv'));
 });

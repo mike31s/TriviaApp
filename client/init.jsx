@@ -6,8 +6,6 @@ import Question from './question.jsx'
 
 $(document).ready(function() {
 
-    $('.ui.dropdown')
-        .dropdown();
 
     document.getElementById("randomQuestionCard").onclick = function(){
         render(<Question />, document.getElementById('questionModalContent'));
@@ -17,5 +15,9 @@ $(document).ready(function() {
             autoplay: true
         });
     };
+
+    $('.ui.dropdown')
+        .dropdown();
+
 
 });

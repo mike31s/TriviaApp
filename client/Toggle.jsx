@@ -35,5 +35,5 @@ var Toggle = React.createClass({
 });
 
 Meteor.startup(() => {
-    render(<Toggle />, document.getElementById('toggleDiv'));
+    //render(<Toggle />, document.getElementById('toggleDiv'));
 });
