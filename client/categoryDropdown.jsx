@@ -21,7 +21,7 @@ class CategoryDropdown extends Component{
                 <div className="menu">
                     <div className="item" data-value="0">Random</div>
                     <div className="item" data-value="1">General Knowledge</div>
-                    <div className="item" data-value="13">History</div>
+                    <div className="item" data-value="14">History</div>
                     <div className="item" data-value="11">Geography</div>
                     <div className="item" data-value="2">Books</div>
                     <div className="item" data-value="3">Film</div>

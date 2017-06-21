@@ -44,6 +44,9 @@ export default class Question extends Component{
             case "Celebrities":
                 result = "26";
                 break;
+            case "History":
+                result = "23";
+                break;
             case "General Knowledge":
                 result = "9";
                 break;
