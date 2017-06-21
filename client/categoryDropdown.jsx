@@ -14,7 +14,7 @@ class CategoryDropdown extends Component{
 
     render() {
         return (
-            <div className="ui selection dropdown">
+            <div className="ui selection dropdown" id="categoryDropdownxxx">
                 <input type="hidden" name="category" />
                 <i className="dropdown icon"></i>
                 <div className="default text">Random</div>

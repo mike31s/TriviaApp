@@ -12,7 +12,10 @@ export default class Question extends Component{
         xhr.send();
 
         var obj = JSON.parse(xhr.response);
+        ////////////////////////////////
 
+        console.log(console.log($('#categoryDropdownxxx')[0].innerText));
+        console.log(console.log($('#difficultyDropdownxxx')[0].innerText));
 
         ////////////////////////////////
 
