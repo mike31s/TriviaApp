@@ -52,6 +52,14 @@ export default class Question extends Component{
         }
         return result;
     }
+    getDifficulty() {
+        var result = $('#difficultyDropdownxxx')[0].innerText;
+        if (result === "Any Difficulty")
+            return 'any'
+        else
+            return result.toLowerCase();
+    }
+
     render () {
 
         var xhr = new XMLHttpRequest();
@@ -62,8 +70,8 @@ export default class Question extends Component{
         ////////////////////////////////
 
         console.log(this.getCategory());
-        console.log($('#categoryDropdownxxx')[0].innerText);
-        console.log($('#difficultyDropdownxxx')[0].innerText);
+        console.log(this.getDifficulty());
+        //console.log($('#categoryDropdownxxx')[0].innerText);
 
         ////////////////////////////////
 
