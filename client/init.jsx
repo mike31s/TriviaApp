@@ -14,7 +14,20 @@ $(document).ready(function() {
         $('.ui.embed').embed({
             autoplay: true
         });
+
+
+      /*  $('#confirmButton').click(function() {
+            buttons = ['#100', '#101', '#102', '#103']
+
+            for (var i = 0; i < buttons.length; i++) {
+                Question.checkAnswer(i)
+
+                if($(buttons[i]).is(':checked')) { alert("it's checked -----> " + buttons[i]); }
+            }
+        });*/
     };
+
+
 
     $('.ui.dropdown')
         .dropdown();

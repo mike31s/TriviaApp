@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 
 
 export default class Question extends Component{
+
     getCategory(){
         var result;
         switch ($('#categoryDropdownxxx')[0].innerText){
@@ -74,7 +75,7 @@ export default class Question extends Component{
             output = 'https://opentdb.com/api.php?amount=1&category=' + cat + '&type=multiple';
         //diff is defined but cat is any
         else if ((difficulty != 'any') &&(cat === 'any') )
-            output = 'https://opentdb.com/api.php?amount=1&difficulty=' + difficulty+ '&type=multiple';
+            output = 'https://opentdb.com/api.php?amount=1&difficulty=' + difficulty + '&type=multiple';
 
         else output = 'https://opentdb.com/api.php?amount=1&type=multiple';
 
@@ -84,6 +85,23 @@ export default class Question extends Component{
         //https://opentdb.com/api.php?amount=1&type=multiple
         //https://opentdb.com/api.php?amount=10&difficulty=easy&type=multiple
     }
+
+
+    checkAnswer(n){
+        console.log (n+1);
+
+        $('#confirmButton').click(function() {
+            buttons = ['#100', '#101', '#102', '#103']
+
+            for (var i = 0; i < buttons.length; i++) {
+                if(($(buttons[i]).is(':checked')) &&( i == n)){
+                    alert("CORRECT----> " + buttons[i]);
+                }
+            }
+        });
+    }
+
+
 
     render () {
 
@@ -111,6 +129,11 @@ export default class Question extends Component{
 
 
         var correctPosition = Math.floor(Math.random() * (3-0+1));
+
+        this.checkAnswer(correctPosition);
+
+       // console.log(this.checkAnswer(correctPosition));
+
         var answerArray = incorrect;
         answerArray.splice(correctPosition, 0, correct);
 
@@ -150,7 +173,7 @@ export default class Question extends Component{
                         </div>
                     </div>
                     <div style={{float: 'right'}}>
-                        <button className="ui blue button" >Confirm</button>
+                        <button className="ui blue button" id="confirmButton">Confirm</button>
                     </div>
                 </div>
             </div>
