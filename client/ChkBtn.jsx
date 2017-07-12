@@ -4,17 +4,18 @@ import React, { Component } from 'react';
 
 export default class ChkBtn extends Component{
 
-    checkAnswer(n){
-        console.log ("Guessed: " + (n+1));
-
+    checkAnswer(correctLocation){
         $('#confirmButton').click(function() {
             buttons = ['#100', '#101', '#102', '#103'];
 
             for (var i = 0; i < buttons.length; i++) {
-                if(($(buttons[i]).is(':checked')) &&( i == n)){
-                    alert("CORRECT----> " + buttons[i]);
+                if(($(buttons[i]).is(':checked')) &&( i == correctLocation)){
+                //CORRECT ANSWER
+                       alert("CORRECT----> " + buttons[i]);
                 }
             }
+            $('#questionModalxxx')
+                .modal('toggle');
         });
     }
     render(){
@@ -24,7 +25,7 @@ export default class ChkBtn extends Component{
         var output = (
             <div style={{float: 'right'}}>
                 <h3> the answer is  {correct} at {correctLocation}</h3>
-            <button className="ui blue button" id="confirmButton" >Confirm</button>
+            <button className="ui blue button" id="confirmButton" onClick={this.checkAnswer(correctLocation)}>Confirm</button>
         </div>);
         return output;
     }
