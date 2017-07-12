@@ -1,6 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { render } from 'react-dom';
 import React, { Component } from 'react';
+import ChkBtn from './ChkBtn.jsx';
 
 
 
@@ -87,20 +88,6 @@ export default class Question extends Component{
     }
 
 
-    checkAnswer(n){
-        console.log (n+1);
-
-        $('#confirmButton').click(function() {
-            buttons = ['#100', '#101', '#102', '#103']
-
-            for (var i = 0; i < buttons.length; i++) {
-                if(($(buttons[i]).is(':checked')) &&( i == n)){
-                    alert("CORRECT----> " + buttons[i]);
-                }
-            }
-        });
-    }
-
 
 
     render () {
@@ -126,17 +113,14 @@ export default class Question extends Component{
         var correct = obj.results[0].correct_answer;
         var incorrect = [obj.results[0].incorrect_answers[0],obj.results[0].incorrect_answers[1],obj.results[0].incorrect_answers[2]];
 
-
-
+        //Put Correct answer in Random position
         var correctPosition = Math.floor(Math.random() * (3-0+1));
-
-        this.checkAnswer(correctPosition);
-
-       // console.log(this.checkAnswer(correctPosition));
-
         var answerArray = incorrect;
         answerArray.splice(correctPosition, 0, correct);
 
+
+
+        //render the output
         var output = (
             <div>
                 <div className="content">
@@ -172,12 +156,13 @@ export default class Question extends Component{
                             </div>
                         </div>
                     </div>
-                    <div style={{float: 'right'}}>
-                        <button className="ui blue button" id="confirmButton">Confirm</button>
-                    </div>
+                    <ChkBtn answerLocation = {correctPosition} answer = {correct}/>
                 </div>
             </div>
         );
+
+        //set correct
+       // this.checkAnswer(correctPosition);
 
         return output;
     }
